@@ -24,23 +24,23 @@ public class CalcController extends HttpServlet {
 		
 		switch (operator) {
 		case "+":
-			// TODO: result = Integer.parseInt(oper1) + Integer.parseInt(oper2);
+			TODO: result = Integer.parseInt(oper1) + Integer.parseInt(oper2);
 			break;
 		case "-":
-			// TODO: result = Integer.parseInt(oper1) - Integer.parseInt(oper2);
+			TODO: result = Integer.parseInt(oper1) - Integer.parseInt(oper2);
 			break;
 		case "*":
-			// TODO: result = Integer.parseInt(oper1) * Integer.parseInt(oper2);
+			TODO: result = Integer.parseInt(oper1) * Integer.parseInt(oper2);
 			break;
 		case "/":
-			// TODO: result = Integer.parseInt(oper1) / Integer.parseInt(oper2);
+			TODO: result = Integer.parseInt(oper1) / Integer.parseInt(oper2);
 			break;
 		}		
 		request.setAttribute("result", result);
 		
 		String page = "/calc_result.jsp";
 		RequestDispatcher rd = request.getRequestDispatcher(page);
-		// forward: fixed address, screen will be changed
+		forward: fixed address, screen will be changed
 		rd.forward(request, response);
 	}
 				   
